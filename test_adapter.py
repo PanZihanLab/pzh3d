@@ -11,8 +11,6 @@ from ldm.modules.extra_condition import api
 from ldm.modules.extra_condition.api import (ExtraCondition, get_adapter_feature, get_cond_model)
 
 torch.set_grad_enabled(False)
-
-
 def main():
     supported_cond = [e.name for e in ExtraCondition]
     parser = get_base_argument_parser()
