@@ -18,7 +18,6 @@ def load_model(cfg,ckpt,strict=True):
     model.load_state_dict(ckpt['state_dict'],strict=strict)
     model = model.cuda().eval()
     return model
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cfg',type=str, default='configs/pzh3d.yaml')
