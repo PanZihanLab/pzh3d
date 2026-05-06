@@ -12,7 +12,7 @@ model:
     drop_conditions: false
     clip_image_encoder_path: ckpt/ViT-L-14.pt
 
-    scheduler_config: # 10000 warmup steps
+    scheduler_config:  10000 warmup steps
       target: ldm.lr_scheduler.LambdaLinearScheduler
       params:
         warm_up_steps: [ 100 ]
