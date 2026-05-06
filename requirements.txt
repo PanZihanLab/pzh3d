@@ -26,4 +26,3 @@ imageio
 k-diffusion
 open-clip-torch
 safetensors
-timm
