@@ -26,7 +26,6 @@ class ResumeCallBacks(Callback):
 
     def on_train_start(self, trainer, pl_module):
         pl_module.optimizers().param_groups = pl_module.optimizers()._optimizer.param_groups
-
 def render_images(model, output,):
     # render from model
     n = 180
